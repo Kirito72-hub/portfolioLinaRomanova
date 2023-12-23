@@ -10,17 +10,10 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-html {
-    /*background-color: var(--background-color);*/
-}
-
 :root {
     --text-color: #D9D9D9;
     --white-color:#FFF;
     --background-color:#000;
-}
-
-section {  
 }
 
 .header {
@@ -103,12 +96,7 @@ section {
     backdrop-filter: blur(2px);
 }
 
-.footer {
-    background-color: aqua;
-}
-
 .footer .swiper {
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -123,6 +111,7 @@ section {
 }
 
 .footer .swiper  .swiper-wrapper .swiper-slide {
+    position: relative;
     width: 275px;
     height: 182.8px;
     flex-shrink: 0;
@@ -134,6 +123,11 @@ section {
     text-align: center;
     font-size: 16px;
     font-weight: 400;
-    position: relative;
+}
+
+.footer .swiper  .swiper-wrapper .swiper-slide .swiper-slide-layer {
+    position: absolute;
     top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
