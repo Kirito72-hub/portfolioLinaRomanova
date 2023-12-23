@@ -101,6 +101,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 .footer .swiper  .swiper-wrapper {
@@ -134,4 +135,17 @@
 
 .footer .swiper  .swiper-wrapper .swiper-slide img {
     opacity: 60%;
+}
+
+.footer .swiper .swiper-button-next,
+.footer .swiper .swiper-button-prev {
+    color: var(--white-color);
+}
+
+.footer .swiper .swiper-button-next {
+    right: 0;
+}
+
+.footer .swiper .swiper-button-prev {
+    left: 0;
 }
