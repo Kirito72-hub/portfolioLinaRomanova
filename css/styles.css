@@ -20,13 +20,18 @@ html {
     --background-color:#000;
 }
 
+section {  
+}
+
 .header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     color: var(--text-color);
     background: transparent;
-    background-color: red;
+    position: absolute;
+    top: 0;
+    z-index: 1;
 }
 
 .header .navbar {
@@ -38,6 +43,7 @@ html {
 
 .header .navbar a {
     color: var(--text-color);
+    white-space: nowrap;
 }
 
 .header .logo {
@@ -95,4 +101,37 @@ html {
     border-radius: 30px;
     border: 1px solid var(--white-color);
     backdrop-filter: blur(2px);
+}
+
+.footer {
+    background-color: aqua;
+}
+
+.footer .swiper {
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .swiper  .swiper-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer .swiper  .swiper-wrapper .swiper-slide {
+    width: 275px;
+    height: 182.8px;
+    flex-shrink: 0;
+    background: rgba(0, 0, 0, 0.75);
+}
+
+.footer .swiper  .swiper-wrapper .swiper-slide h6 {
+    color: var(--white-color);
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
 }
