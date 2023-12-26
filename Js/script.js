@@ -1,12 +1,6 @@
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules'; 
-
-// ================swiper================
+// ==================swiper================
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: 1,
-  observer: true,
-  observeParents: true,
-  parallax:true,
   spaceBetween: 50,
   loop: true,
   grabCursor: true,
